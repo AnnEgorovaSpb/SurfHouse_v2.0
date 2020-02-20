@@ -70,7 +70,7 @@ body {
 }
 
 .header-container {
-  width: 1170px;
+  max-width: 1170px;
   min-height: 700px;
   margin: 0 auto;
   padding: 0;
@@ -190,5 +190,103 @@ body {
   background-color: #fff51f;
   color: #000000;
   border: 2px solid transparent;
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .header-container {
+    max-width: 100%;
+  }
+  .header-container-welcome {
+    left: 20px;
+    bottom: 170px;
+  }
+  .header-container-funride {
+    right: 20px;
+    bottom: 170px;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 767.98px) {
+  .header-container {
+    max-width: 100%;
+    min-height: auto;
+    padding: 20px;
+    position: static;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .header-container-logo-link {
+    position: static;
+    margin: 0 0 20px 0;
+  }
+  .header-container-social {
+    width: 50%;
+    position: static;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .header-container-social-link {
+    margin-right: 40px;
+  }
+  .header-container-welcome {
+    width: 450px;
+    position: static;
+    margin: 0 auto 30px;
+  }
+  .header-container-funride {
+    width: 450px;
+    position: static;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+@media (max-width: 479.98px) {
+  .header-container {
+    max-width: 100%;
+    min-height: auto;
+    padding: 20px;
+    position: static;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .header-container-logo-link {
+    position: static;
+    margin: 0 0 20px 0;
+  }
+  .header-container-social {
+    width: 50%;
+    position: static;
+  }
+  .header-container-welcome {
+    width: 450px;
+    position: static;
+    margin: 0 auto 30px;
+  }
+  .header-container-funride {
+    width: 450px;
+    position: static;
+    margin: 0 auto;
+    text-align: center;
+  }
 }
 /*# sourceMappingURL=style.css.map */
